@@ -7,6 +7,7 @@ public class Rocket : MonoBehaviour
     [SerializeField] float speedFly;
     [SerializeField] Transform transfPlanet;
     [SerializeField] Rigidbody2D rgbody;
+    [SerializeField] TrailRenderer trailRenderer;
 
     Vector2 _vecPrePosition;
     Vector2 _vecCurPosition;
@@ -15,8 +16,8 @@ public class Rocket : MonoBehaviour
     void Start()
     {
         //_vecOriginPostion = transform.position;
-        Vector2 vecForceFly = new Vector2(1f, 1f);
-        rgbody.AddForce(vecForceFly, ForceMode2D.Impulse);
+        //Vector2 vecForceFly = new Vector2(1f, 1f);
+        //rgbody.AddForce(vecForceFly, ForceMode2D.Impulse);
     }
     float _totalTimeFly = 4f;
 
